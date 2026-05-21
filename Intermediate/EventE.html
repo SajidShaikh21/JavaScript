@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Event and Event listner</title>
+</head>
+<body>
+    <!-- <button oneclick="sayHello">Click Me</button> -->
+
+   <!--  <button id="btn">Click Me</button> -->
+
+             <button id="btn">Add Me</button>
+             <button id="removeBtn">Remove Me</button>
+
+
+    <script>
+       //  function sayHello()
+   //{
+      //  alert('hello, World');
+   // }
+
+
+    // document.getElementById('btn').onclick=function()
+    //   {
+    //    alert('hello, world');
+    //   } 
+
+     //   document.getElementById('btn').onclick = function() {
+    //    alert('Hello, World!');
+     //   }
+        
+      const btn = document.getElementById('btn');
+        const removeBtn = document.getElementById('removeBtn');
+     function sayHello()
+     {
+        alert('hello, world');
+     }
+       btn.addEventListener('click',sayHello)
+       removeBtn.addEventListener('click', function() {
+          btn.removeEventListener('click', sayHello);
+          alert('Event listener removed');
+         });
+    </script>
+
+</body>
+</html>

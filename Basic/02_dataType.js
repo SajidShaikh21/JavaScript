@@ -1,8 +1,8 @@
 //string
-let name="mohit";
+//let name="mohit";
 //console.log(name);
 
-console.log(typeof name);
+//console.log(typeof name);
 
 //Number
 let age=20;
